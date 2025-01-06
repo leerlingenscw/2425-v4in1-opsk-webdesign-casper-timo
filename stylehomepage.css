@@ -44,4 +44,9 @@ header {
     padding: 75px 75px 10px 10px;
 }
 footer {
+    background-color: #545454;
+    height: 75px;
+    width: 100%;
+    color: #efefef;
+    padding: 10px;
 }

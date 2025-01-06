@@ -1,5 +1,6 @@
 body {
     background-color: #efefef;
+    margin: 0px;
 }
 button {
     background-color: #68d5d8;
@@ -13,6 +14,10 @@ button {
     border-style: none none solid none;
     border-width: 5px;
     border-color: #00184d;
+    transition: color 0.5s;
+}
+button:hover {
+    color:#efefef;
 }
 header {
     text-align: center;

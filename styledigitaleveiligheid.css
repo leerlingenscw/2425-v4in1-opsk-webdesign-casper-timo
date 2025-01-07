@@ -30,3 +30,33 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+nav{
+    width: 12%;
+    background-color: #68d5d8;
+    height: 1200px;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15pt;
+    color:#00184d;
+    float:left;
+}
+li a:hover{
+    color:#efefef;
+}
+li a:link{
+    color:#00184d;
+    text-decoration: none;
+}
+.artikel1{
+    height: 500px;
+    width: 700px;
+    padding: 20px;
+}
+footer {
+    background-color: #545454;
+    height: 75px;
+    width: 100%;
+    color: #efefef;
+    padding: 10px;
+    float:bottom;
+}

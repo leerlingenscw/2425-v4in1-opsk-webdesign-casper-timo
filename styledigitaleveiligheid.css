@@ -1,6 +1,10 @@
 body {
     background-color: #efefef;
     margin: 0px;
+}
+main {
+    grid-area: main;
+}
 button { 
     background-color: #00184d;
     border-radius: 20px;
@@ -18,6 +22,7 @@ button:hover {
     border-color: #efefef;
 }
 header {
+    grid-area: header;
     text-align: center;
     color: #efefef;
     font-size: 30pt;
@@ -31,14 +36,16 @@ header {
     padding-bottom: 20px;
 }
 nav{
-    width: 12%;
+    grid-area: nav;
+    /* width: 12%; */
     background-color: #68d5d8;
-    height: 1200px;
+    height: 100%;
     padding-top: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15pt;
     color:#00184d;
     float:left;
+    margin-right: 50px;
 }
 li a:hover{
     color:#efefef;
@@ -47,16 +54,28 @@ li a:link{
     color:#00184d;
     text-decoration: none;
 }
-.artikel1{
-    height: 500px;
-    width: 700px;
-    padding: 20px;
+article {
+   padding: 10px;
+   margin-right: 50px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 footer {
+    grid-area: footer;
     background-color: #545454;
     height: 75px;
     width: 100%;
     color: #efefef;
-    padding: 10px;
     float:bottom;
+    padding: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    /* gap: 10px; */
 }

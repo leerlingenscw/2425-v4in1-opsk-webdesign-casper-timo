@@ -1,6 +1,13 @@
 body {
     background-color: #efefef;
     margin: 0px;
+    overflow-x: hidden;
+}
+main {
+    grid-area: main;
+}
+nav{
+    grid-area: nav;
 }
 button {
     background-color: #68d5d8;
@@ -20,6 +27,7 @@ button:hover {
     color:#efefef;
 }
 header {
+    grid-area: header;
     text-align: center;
     color: #efefef;
     font-size: 30pt;
@@ -49,9 +57,22 @@ header {
     padding: 75px 75px 10px 10px;
 }
 footer {
+    grid-area: footer;
     background-color: #545454;
     height: 75px;
     width: 100%;
     color: #efefef;
     padding: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap; 10px;
 }

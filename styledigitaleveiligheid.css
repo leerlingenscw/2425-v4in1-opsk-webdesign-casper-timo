@@ -1,9 +1,21 @@
 body {
     background-color: #efefef;
     margin: 0px;
+    padding: 0px;
 }
 main {
     grid-area: main;
+    .grid-main { 
+        display: grid;
+        grid-template-areas: 
+        ".artikel1 .artikel1 .afbeelding1"
+        ".afbeelding2 .artikel2 .artikel2"
+        ".artikel3 .artikel3 .afbeelding3"
+        ".afbeelding4 .artikel4 .artikel4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        min-height: 100vh;
+    }
 }
 button { 
     background-color: #00184d;
@@ -45,18 +57,25 @@ nav{
     font-size: 15pt;
     color:#00184d;
     float:left;
+    line-height: 40px;
     margin-right: 50px;
 }
-li a:hover{
+li a:visited:hover{
     color:#efefef;
 }
 li a:link{
     color:#00184d;
     text-decoration: none;
 }
+li a:link:hover{
+    color:#efefef;
+}
+li a:visited{
+    color:#00184d;
+    text-decoration: none;
+}
 article {
    padding: 10px;
-   margin-right: 50px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 footer {
@@ -66,7 +85,6 @@ footer {
     width: 100%;
     color: #efefef;
     float:bottom;
-    padding: 10px;
 }
 .grid-container {
     display: grid;

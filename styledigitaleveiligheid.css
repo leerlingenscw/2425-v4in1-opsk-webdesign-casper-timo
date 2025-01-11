@@ -13,7 +13,7 @@ main {
         ".artikel3 .artikel3 .afbeelding3"
         ".afbeelding4 .artikel4 .artikel4";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
         min-height: 100vh;
     }
 }
@@ -49,7 +49,6 @@ header {
 }
 nav{
     grid-area: nav;
-    /* width: 12%; */
     background-color: #68d5d8;
     height: 100%;
     padding-top: 10px;
@@ -60,19 +59,31 @@ nav{
     line-height: 40px;
     margin-right: 50px;
 }
+li {
+    list-style: none;
+    margin-left: -10px;
+}
 li a:visited:hover{
     color:#efefef;
+    background-color:#67c5ca;
+    padding: 10px;
+    border-radius: 6px;
 }
 li a:link{
     color:#00184d;
     text-decoration: none;
+    transition: color 0.25s, background-color 0.25s, padding 0.25s;
 }
 li a:link:hover{
     color:#efefef;
+    background-color:#67c5ca;
+    padding: 10px;
+    border-radius: 6px;
 }
 li a:visited{
     color:#00184d;
     text-decoration: none;
+    transition: color 0.25s, background-color 0.25s, padding 0.25s;
 }
 article {
    padding: 10px;

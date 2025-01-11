@@ -21,10 +21,11 @@ button {
     border-style: none none solid none;
     border-width: 5px;
     border-color: #00184d;
-    transition: color 0.25s;
+    transition: color 0.25s, background-color 0.25s;
 }
 button:hover {
     color:#efefef;
+    background-color:#67c5ca;
 }
 header {
     grid-area: header;

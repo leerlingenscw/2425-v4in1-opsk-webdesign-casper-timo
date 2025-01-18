@@ -11,6 +11,9 @@
   <body>
     <div class="grid-container">
       <header>
+        <div class="dark-mode-knop">
+        <button onclick="myFunction()">Dark Mode</button>
+      </div>
       <a href="index.html">
         <button>
           <img src="https://static-00.iconduck.com/assets.00/house-home-icon-2048x2048-i2s0zt31.png" width="75px" height="75px">
@@ -57,6 +60,12 @@
         </p2>
       </article>
     </div> 
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
      </main>
      <footer>
         <p>Door Timo Brouns & Casper Brinkman</p>

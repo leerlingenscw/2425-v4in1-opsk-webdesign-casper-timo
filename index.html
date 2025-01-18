@@ -11,6 +11,7 @@
 <body>
   <div class="grid-container">
  <header>
+  <button onclick="myFunction()">Dark Mode</button>
   <h1>Security</h1>
 </header>
  <nav>
@@ -28,6 +29,7 @@
   </a>
  </nav>
 <main>
+  <div class="main-grid">
   <article class="inleiding">
     <h2>Inleiding</h2>
     <p2>
@@ -35,8 +37,15 @@
     </p2>
   </article>
   <article class="afbeeldinginleiding">
-    <img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="250px" height="300px">
+    <img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" height="300px">
   </article>
+</div>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </main>
  <footer>
   <p>Door Timo Brouns & Casper Brinkman</p>

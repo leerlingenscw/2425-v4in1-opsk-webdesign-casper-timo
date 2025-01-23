@@ -8,7 +8,7 @@ main {
     .main-grid { 
         display: grid;
         grid-template-areas: 
-        "inleiding inleiding afbeeldinginleiding";
+        "inleiding afbeeldinginleiding";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         min-height: 100vh;
@@ -16,17 +16,17 @@ main {
 }
 header button{
     float: right;
-    background-color: #68d5d8;
-    color: #00184d;
+    background-color: #0097b2;
+    border-color:#00184d;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-style: solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: color 0.25s, background-color 0.25s, font-size 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
 }
 header button:hover{ 
-    color:#efefef;
-    background-color:#67c5ca;
-    font-size: 12pt;
+    background-color:#01adcb;
+    border-color: #efefef;
 }
 .dark-mode{
     background-color: #3d434a;
@@ -36,7 +36,7 @@ nav{
     grid-area: nav;
 }
 nav button {
-    background-color: #68d5d8;
+    background-color: #0097b2;
     width: 25%;
     height: 75px;
     padding: 0px;
@@ -51,7 +51,7 @@ nav button {
 }
 nav button:hover {
     color:#efefef;
-    background-color:#67c5ca;
+    background-color:#01adcb;
     font-size: 16pt;
 }
 header {
@@ -73,15 +73,13 @@ header {
     font-family: verdana;
     font-size: 12pt;
     text-align: left;
-    padding: 75px 200px 10px 75px;
+    padding: 75px 100px 10px 75px;
 }
 .inleiding h2 {
     font-size: 20pt;
 }
 .afbeeldinginleiding {
     grid-area: afbeeldinginleiding;
-    width: 250px;
-    height: 300px;
     padding: 75px 75px 10px 10px;
 }
 footer {

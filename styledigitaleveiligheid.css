@@ -19,17 +19,17 @@ main {
 }
 header .dark-mode-knop button{
     float: right;
-    background-color: #68d5d8;
+    background-color: #0097b2;
     color: #00184d;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-style: solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: color 0.25s, background-color 0.25s, font-size 0.25s;
 }
 header .dark-mode-knop button:hover{ 
-    color:#efefef;
-    background-color:#67c5ca;
-    font-size: 12pt;
+    border-color:#efefef;
+    background-color:#01adcb;
 }
 .dark-mode{
     background-color: #3d434a;
@@ -38,17 +38,17 @@ header .dark-mode-knop button:hover{
 header a button { 
     background-color: #00184d;
     border-radius: 20px;
-    border-color: #00184d;
+    border-color: #0097b2;
     border-style: solid;
-    height: 125px;
-    width: 125px;
+    height: 120px;
+    width: 120px;
     transition: height 0.5s, width 0.5s;
     float: left;
     margin: 30px;
 }
 header a button:hover {
-    height: 140px;
-    width: 140px;
+    height: 125px;
+    width: 125px;
     border-color: #efefef;
 }
 header {
@@ -57,7 +57,7 @@ header {
     color: #efefef;
     font-size: 30pt;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #0097b2;
+    background-image: url(https://i.pinimg.com/originals/e2/8d/61/e28d61b0ce1b686bbd9c19b98912101f.gif);
     width: 100%;
     border-style: none none solid none;
     border-width: 5px;
@@ -67,7 +67,7 @@ header {
 }
 nav{
     grid-area: nav;
-    background-color: #68d5d8;
+    background-color: #0097b2;
     height: 100%;
     padding-top: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,7 +83,7 @@ li {
 }
 li a:visited:hover{
     color:#efefef;
-    background-color:#67c5ca;
+    background-color:#01adcb;
     padding: 10px 5px 10px 5px;
     border-radius: 6px;
 }
@@ -94,7 +94,7 @@ li a:link{
 }
 li a:link:hover{
     color:#efefef;
-    background-color:#67c5ca;
+    background-color:#01adcb;
     padding: 10px 5px 10px 5px;
     border-radius: 6px;
 }

@@ -8,14 +8,38 @@ main {
     .grid-main { 
         display: grid;
         grid-template-areas: 
-        ".artikel1 .artikel1 .afbeelding1"
-        ".afbeelding2 .artikel2 .artikel2"
-        ".artikel3 .artikel3 .afbeelding3"
-        ".afbeelding4 .artikel4 .artikel4";
+        "artikel1 afbeelding1"
+        "afbeelding2 artikel2"
+        "artikel3 afbeelding3"
+        "afbeelding4 artikel4";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto auto;
         min-height: 100vh;
     }
+}
+.artikel1 {
+    grid-area: artikel1;
+}
+.afbeelding1 {
+    grid-area: afbeelding1;
+}
+.artikel2 {
+    grid-area: artikel2;
+}
+.afbeelding2 {
+    grid-area: afbeelding2;
+}
+.artikel3 {
+    grid-area: artikel3;
+}
+.afbeelding3 {
+    grid-area: afbeelding3;
+}
+.artikel4 {
+    grid-area: artikel4;
+}
+.afbeelding4 {
+    grid-area: afbeelding4;
 }
 header .dark-mode-knop button{
     float: right;
@@ -78,7 +102,7 @@ nav{
     line-height: 40px;
     margin-right: 50px;
 }
-li {
+nav ul {
     list-style: none;
     margin-left: -15px;
 }

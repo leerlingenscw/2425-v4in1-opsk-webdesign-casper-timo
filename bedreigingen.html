@@ -4,8 +4,107 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Security | Bedreigingen | Timo Brouns & Casper Brinkman</title>
-    <link href="stylebedreigingen.css" rel="stylesheet" type="text/css" />
+    <title>Security | Digitale veiligheid | Timo Brouns & Casper Brinkman</title>
+    <link href="styledigitaleveiligheid.css" rel="stylesheet" type="text/css" />
   </head>
-</html>
 
+  <body>
+    <div class="grid-container">
+      <header>
+        <div class="dark-mode-knop">
+        <button onclick="myFunction()"><img src="https://cdn-icons-png.flaticon.com/512/25/25665.png" height="30px" width="30px"></button>
+      </div>
+      <a href="index.html">
+        <button>
+          <img src="https://static-00.iconduck.com/assets.00/house-home-icon-2048x2048-i2s0zt31.png" width="75px" height="75px">
+        </button>
+      </a>
+      <h1>Bedreigingen</h1>
+    </header>
+    <nav>
+      <ul>
+         <li><a href="digitaleveiligheid.html">Digitale Veiligheid</a></li>
+          <li><a href="bedreigingen.html">Bedreigingen</a></li>
+         <li><a href="aanvallersenverdedigers.html">Aanvallers en Verdedigers</a></li>
+         <li><a href="maatregelen.html">Maatregelen</a></li>
+       </ul>
+     </nav>
+     <main>
+      <div class="grid-main">
+      <article class="artikel1">
+         <h2>Inleiding</h2>
+         <p2>
+          Digitale veiligheid is tegenwoordig belangrijker dan ooit. Daarom is het handig om er wat vanaf te weten. Eerst de basis.
+
+        </p2>
+       </article>
+       <article class="afbeelding1"><img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="300px"></article>
+       <article class="afbeelding2"><img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="300px"></article>
+       <article class="artikel2">
+        <h2>Vertrouwen</h2>
+        <p2>
+          Identificatie en verificatie zijn verschillende dingen, identificatie is namelijk dat je zegt wie je bent, terwijl verificatie is of je kan bewijzen dat je ook echt de persoon bent die je zegt te zijn. Als je bijvoorbeeld online inlogt op je schoolaccount, dan vragen ze vaak eerst wie je bent. En dan vul je je gebruikersnaam of e-mail in, dat is je identificatie. Daarna vragen ze om verificatie, bijvoorbeeld een wachtwoord, alleen jij weet die.
+          <br> 
+          <br>
+          Hoe meer stappen je toevoegt aan inloggen bij wat dan ook, hoe veiliger het kan zijn dat je wil beschermen. Neem nou two factor identification. Dit is nog beter, want het combineert wat je weet samen met iets wat je hebt. Een andere extreme variant van identificatie is screening, hierbij wordt er gebruikgemaakt van camera’s om te controleren of de persoon die ergens identificatie laat zien niet op een blacklist staat. Dit soort manieren worden vooral gebruikt door overheden of grote bedrijven.
+
+        </p2>
+      </article>
+      <article class="artikel3">
+        <h2>Integriteit</h2>
+        <p2>
+          Welke rechten een gebruiker heeft, noem je integriteit. Het systeem checkt dan welke dingen je op een website wel en niet kan doen of zien. Per gebruiker kunnen die dus anders zijn, daarom moet er gecontroleerd worden welke rechten je hebt. Dit noem je autorisatie.
+
+        </p2>
+      </article>
+      <article class="afbeelding3"><img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="300px"></article>
+      <article class="afbeelding4"><img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="300px"></article>
+      <article class="artikel4">
+        <h2>Beschikbaarheid</h2>
+        <p2>
+          De beschikbaarheid van je data is erg belangrijk, alleen voor jezelf. Als je computer kapot gaat en je hebt niets opgeslagen, dan ben je alles kwijt. Daarom is het handig om back-ups te maken. Back-ups zijn opgeslagen varianten van je data, dus als je iets verliest, kan je het nog terugkrijgen. Manieren om dit te doen zijn: 
+      
+          <ol>
+
+        <li> Online back-ups maken, deze worden opgeslagen in de cloud. Een voorbeeld hiervan is OneDrive of Google Drive.</li>
+      
+        <li>Fysiek is een andere manier om dingen te bewaren, via een USB-stick of een externe harde schijf. Wel is het handig om deze op een andere plek te bewaren. Want als je je computer en bijvoorbeeld een USB-stick bij elkaar hebt liggen, en er brand ontstaat, dan ben je beide kwijt. Het is dus beter om ze op afstand van elkaar te bewaren.</li>
+
+        </ol>
+       
+      Dus hoe meer back-ups je maakt op verschillende plekken, des te beter de kans is dat de data bestaan blijft. Het wordt aangeraden om op minimaal 3 plekken je data te bewaren, dit noem je het 3-2-1-systeem voor back-ups.
+
+        <br>
+        <br>
+        Encryptie is een handige manier om belangrijke informatie zoals wachtwoorden, pincodes of geheime bestanden te versturen, zonder dat een hacker er zomaar achter komt wat het is. Wat er bij encryptie gebeurd is dat de informatie op een wiskundige manier gehusseld wordt, en het kan alleen teruggezet worden met een soort sleutel. Deze sleutel zet als de informatie al gehusseld is, terug om in het origineel.
+
+      </p2>
+      </article>
+    </div> 
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      
+         if (element.classList.contains("dark-mode")) {
+           localStorage.setItem("dark-mode", "true");
+         } else {
+           localStorage.setItem("dark-mode", "false");
+         }
+      }
+      
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var element = document.body;
+      
+        if (localStorage.getItem("dark-mode") === "true") {
+          element.classList.add("dark-mode");
+        }
+      });
+      </script>
+     </main>
+     <footer>
+        <p>Door Timo Brouns & Casper Brinkman 2024 ©</p>
+      </footer>
+    </div>
+  </body>
+</html>

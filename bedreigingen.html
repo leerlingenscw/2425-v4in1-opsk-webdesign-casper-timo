@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Security | Digitale veiligheid | Timo Brouns & Casper Brinkman</title>
+    <title>Security | Bedreigingen | Timo Brouns & Casper Brinkman</title>
     <link href="styledigitaleveiligheid.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -34,50 +34,41 @@
       <article class="artikel1">
          <h2>Inleiding</h2>
          <p2>
-          Digitale veiligheid is tegenwoordig belangrijker dan ooit. Daarom is het handig om er wat vanaf te weten. Eerst de basis.
-
-        </p2>
+          In alle lagen van een apparaat of site kunnen fouten zitten, van software tot fysieke onderdelen, en als je niet voorzichtig bent, kunnen mensen daar misbruik van maken. Neem nou je camera, als iemand in de beveiligingssoftware daar een fout vindt dan kan deze persoon zonder toestemming meekijken. Of de beveiliging op je bestanden is niet goed genoeg en dan kan een persoon daar ook bij. 
+      </p2>
        </article>
        <article class="afbeelding1"><img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="300px"></article>
        <article class="afbeelding2"><img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="300px"></article>
        <article class="artikel2">
-        <h2>Vertrouwen</h2>
+        <h2>Zwakheden in de architectuur en communicatie</h2>
         <p2>
-          Identificatie en verificatie zijn verschillende dingen, identificatie is namelijk dat je zegt wie je bent, terwijl verificatie is of je kan bewijzen dat je ook echt de persoon bent die je zegt te zijn. Als je bijvoorbeeld online inlogt op je schoolaccount, dan vragen ze vaak eerst wie je bent. En dan vul je je gebruikersnaam of e-mail in, dat is je identificatie. Daarna vragen ze om verificatie, bijvoorbeeld een wachtwoord, alleen jij weet die.
+          Tegenwoordig gebeurt het wel vaker dat er een ¨lekkage¨ is, daarmee wordt bedoeld dat hackers een zwakte hebben gevonden en delen het dan met anderen. Hierdoor kan veel schade veroorzaakt worden, want met toegang tot een bestand kunnen ze dingen aanpassen, toevoegen of verwijderen. Om dit soort dingen te voorkomen is het belangrijk om je apparaten up to date met de updates te houden.
           <br> 
           <br>
-          Hoe meer stappen je toevoegt aan inloggen bij wat dan ook, hoe veiliger het kan zijn dat je wil beschermen. Neem nou two factor identification. Dit is nog beter, want het combineert wat je weet samen met iets wat je hebt. Een andere extreme variant van identificatie is screening, hierbij wordt er gebruikgemaakt van camera’s om te controleren of de persoon die ergens identificatie laat zien niet op een blacklist staat. Dit soort manieren worden vooral gebruikt door overheden of grote bedrijven.
-
+          Communicatie tussen jouw telefoon en een website is meestal veilig. Want alles wat je invoert om daar in te komen zoals wachtwoorden ziet alleen de website en niemand anders. Maar dit is niet altijd zo. Als je op openbare wifi, met meestal slechte beveiliging, gaat bankieren, dan kan er iemand tussen jou en de website in gaan zitten. Als je dan gegevens invult dan gaat dat via de man-in-the-middle. Die kan dus alles zien wat er gebeurt en jouw persoonlijke informatie stelen. Terwijl jij niks doorhebt.
+          <br> 
+          <br>
+          HTTPS is wat veel diensten gebruiken om hun communicatie tussen de website en de gebruiker te beveiligen. Maar een nadeel is dat sinds de gegevens pas versleuteld worden nadat ze verstuurd worden, dus de ontvanger kan de onversleutelde gegevens nog zien zonder sleutel. Maar bij end-to-end-encryptie kan dat niet, want de gegevens worden al voordat ze verstuurd worden versleuteld. Dus je kan het niet lezen zonder de sleutel.
+          <br> 
+          <br>
+          Wachtwoorden zijn moeilijker te kraken als je meer karakters en nummers toevoegt, want de totale kans dat het geraden wordt daalt dan enorm. Wel is het slim om niet een wachtwoord te kiezen dat voor de hand ligt, dus niet iets zoals ´123456´ of ´wachtwoord´. Dit zijn misschien overdreven voorbeelden, maar veel mensen doen het toch.
         </p2>
       </article>
       <article class="artikel3">
-        <h2>Integriteit</h2>
+        <h2>Technieken</h2>
         <p2>
-          Welke rechten een gebruiker heeft, noem je integriteit. Het systeem checkt dan welke dingen je op een website wel en niet kan doen of zien. Per gebruiker kunnen die dus anders zijn, daarom moet er gecontroleerd worden welke rechten je hebt. Dit noem je autorisatie.
-
+          Social engineering is een methode waarbij aanvallers psychologische trucs gebruiken om mensen te manipuleren zodat ze hun gevoelige informatie delen. Dit kunnen ze doen door zich als iemand anders voor te doen. Bijvoorbeeld als je problemen hebt met je Microsoft account, en je gaat bellen met de klantenservice, de kans is klein, maar als je op de verkeerde pagina terechtkomt kan het verveldend zijn. Ook kunnen de aanvallers naar jou toekomen, bijvoorbeeld via je mail. Dan krijg je een mail van de ´belastingdienst´ dat je nog ´onbetaalde rekeningen´ hebt en dat ze het wel telefonisch willen oplossen. Dit soort mailtjes moet je nooit vertrouwen. Maar hoe kun je weten of je het wel moet vertrouwen? Je kunt de bron bekijken, is de website wel officieel, of heeft het een rare link? Dan moet je vooral niet verder gaan. 
+    <br>
+    <br>
+    Mensen zijn vaak een zwakke schakel in de beveiliging van digitale systemen, daarom worden vaak oudere mensen als doelwit gebruikt voor social engineering, en er is soms niet veel aan te doen, het beste is om mensen duidelijk te maken van dit soort onderwerpen.
         </p2>
       </article>
       <article class="afbeelding3"><img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="300px"></article>
       <article class="afbeelding4"><img src="https://m.media-amazon.com/images/I/715vwvP5ZEL.png" width="300px"></article>
       <article class="artikel4">
-        <h2>Beschikbaarheid</h2>
+        <h2>Malware</h2>
         <p2>
-          De beschikbaarheid van je data is erg belangrijk, alleen voor jezelf. Als je computer kapot gaat en je hebt niets opgeslagen, dan ben je alles kwijt. Daarom is het handig om back-ups te maken. Back-ups zijn opgeslagen varianten van je data, dus als je iets verliest, kan je het nog terugkrijgen. Manieren om dit te doen zijn: 
-      
-          <ol>
-
-        <li> Online back-ups maken, deze worden opgeslagen in de cloud. Een voorbeeld hiervan is OneDrive of Google Drive.</li>
-      
-        <li>Fysiek is een andere manier om dingen te bewaren, via een USB-stick of een externe harde schijf. Wel is het handig om deze op een andere plek te bewaren. Want als je je computer en bijvoorbeeld een USB-stick bij elkaar hebt liggen, en er brand ontstaat, dan ben je beide kwijt. Het is dus beter om ze op afstand van elkaar te bewaren.</li>
-
-        </ol>
-       
-      Dus hoe meer back-ups je maakt op verschillende plekken, des te beter de kans is dat de data bestaan blijft. Het wordt aangeraden om op minimaal 3 plekken je data te bewaren, dit noem je het 3-2-1-systeem voor back-ups.
-
-        <br>
-        <br>
-        Encryptie is een handige manier om belangrijke informatie zoals wachtwoorden, pincodes of geheime bestanden te versturen, zonder dat een hacker er zomaar achter komt wat het is. Wat er bij encryptie gebeurd is dat de informatie op een wiskundige manier gehusseld wordt, en het kan alleen teruggezet worden met een soort sleutel. Deze sleutel zet als de informatie al gehusseld is, terug om in het origineel.
-
+          Er bestaat ook kwaadaardige software, genaamd malware. De meest bekende zijn trojans, wormen en virussen. Trojan horses / trojans zijn delen van bestanden die na activatie aanvallen. Eerst lijkt er niks mis te zijn met het bestand, maar pas op, want er zit schadelijke software in verborgen, daarom ook de naam trojans. Wormen zijn volledig zelfverspreidende software via netwerken zoals je mail. Deze kan ook schade aanrichten. Als je dan een worm per ongeluk download, dan stuurt het zich naar al jouw contacten door, en deze ontvangers weer naar hun kennissen enz. Totdat zelfs hele landen last kunnen hebben van dezelfde aanval. Tot slot zijn virussen meer specifieke aanvallers die bestaande software besmetten. Dit kan dus soms alleen een paar mensen overkomen. Tenzij het verder doorgestuurd wordt.
       </p2>
       </article>
     </div> 

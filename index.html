@@ -50,25 +50,25 @@
   </article>
 </div>
 <script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-   
-   if (!localStorage.getItem("dark-mode") == true) {
-    localStorage.setItem("dark-mode", true);
-   }
-   else {
-    localStorage.setItem("dark-mode", false)
-   }
-}
-
-document.addEventListener("DOMContentLoaded", function(event) {
-  var element = document.body;
-  if (localStorage.getItem("dark-mode") == true) {
-    element.classList.toggle("dark-mode");
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  
+     if (element.classList.contains("dark-mode")) {
+       localStorage.setItem("dark-mode", "true");
+     } else {
+       localStorage.setItem("dark-mode", "false");
+     }
   }
-});
-</script>
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var element = document.body;
+  
+    if (localStorage.getItem("dark-mode") === "true") {
+      element.classList.add("dark-mode");
+    }
+  });
+  </script>
 </main>
  <footer>
   <p>Door Timo Brouns & Casper Brinkman 2024 © </p>

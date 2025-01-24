@@ -63,14 +63,43 @@
         <h2>Beschikbaarheid</h2>
         <p2>
           De beschikbaarheid van je data is erg belangrijk, alleen voor jezelf. Als je computer kapot gaat en je hebt niets opgeslagen, dan ben je alles kwijt. Daarom is het handig om back-ups te maken. Back-ups zijn opgeslagen varianten van je data, dus als je iets verliest, kan je het nog terugkrijgen. Manieren om dit te doen zijn: 
-        </p2>
+      
+          <ol>
+
+        <li> Online back-ups maken, deze worden opgeslagen in de cloud. Een voorbeeld hiervan is OneDrive of Google Drive.</li>
+      
+        <li>Fysiek is een andere manier om dingen te bewaren, via een USB-stick of een externe harde schijf. Wel is het handig om deze op een andere plek te bewaren. Want als je je computer en bijvoorbeeld een USB-stick bij elkaar hebt liggen, en er brand ontstaat, dan ben je beide kwijt. Het is dus beter om ze op afstand van elkaar te bewaren.</li>
+
+        </ol>
+       
+      Dus hoe meer back-ups je maakt op verschillende plekken, des te beter de kans is dat de data bestaan blijft. Het wordt aangeraden om op minimaal 3 plekken je data te bewaren, dit noem je het 3-2-1-systeem voor back-ups.
+
+        <br>
+        <br>
+        Encryptie is een handige manier om belangrijke informatie zoals wachtwoorden, pincodes of geheime bestanden te versturen, zonder dat een hacker er zomaar achter komt wat het is. Wat er bij encryptie gebeurd is dat de informatie op een wiskundige manier gehusseld wordt, en het kan alleen teruggezet worden met een soort sleutel. Deze sleutel zet als de informatie al gehusseld is, terug om in het origineel.
+
+      </p2>
       </article>
     </div> 
     <script>
       function myFunction() {
          var element = document.body;
          element.classList.toggle("dark-mode");
+      
+         if (element.classList.contains("dark-mode")) {
+           localStorage.setItem("dark-mode", "true");
+         } else {
+           localStorage.setItem("dark-mode", "false");
+         }
       }
+      
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var element = document.body;
+      
+        if (localStorage.getItem("dark-mode") === "true") {
+          element.classList.add("dark-mode");
+        }
+      });
       </script>
      </main>
      <footer>

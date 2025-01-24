@@ -31,9 +31,18 @@
 <main>
   <div class="main-grid">
   <article class="inleiding">
-    <h2>Inleiding</h2>
+    <h2>Wat is cybersecurity?</h2>
     <p2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ullamcorper nibh, sit amet finibus turpis. Etiam ultrices gravida velit, id varius lorem ornare ac. Suspendisse tincidunt tellus vitae dolor pellentesque varius. Nunc et porttitor purus. Duis nibh nibh, rutrum et mi nec, auctor bibendum odio. Vivamus pellentesque purus non consectetur hendrerit. Vivamus dapibus ultrices lacinia. Pellentesque tincidunt dolor purus, at tincidunt augue tincidunt sit amet. In iaculis mauris nec suscipit egestas. Ut consequat ipsum sapien, a malesuada urna fringilla non. Morbi aliquam augue vel lacus viverra feugiat. Donec euismod vehicula dui ac rhoncus. Quisque vel magna pretium, ultrices ligula eget, sodales mi.
+      Je hebt er vast wel eens te maken mee gehad of in ieder geval er over gehoord: Cybersecurity. Dit is de bescherming tegen gevaren online. Mensen online die zeggen dat je verschillende wachtwoorden moet hebben voor elk van je accounts, de zoveelste hacker op het nieuws of zelfs je oma die weer hulp nodig heeft omdat ze haar wachtwoord niet meer weet; we komen er steeds meer mee te maken door de snelle digitalisering van onze wereld. Helaas zitten er achter deze snelle innovaties dus ook veel problemen, die daarom ook meer opdagen. We gaan het hebben over vier onderwerpen die hiermee te maken hebben:
+
+      <ol>
+        <li>Digitale veiligheid: Hoe kunnen we onszelf beschermen tegen hackers en cyberaanvallen?</li>
+      
+        <li>Bedreigingen: Waarvoor moeten we uitkijken als we op het internet zijn?</li>
+      
+        <li>Aanvallers en verdedigers: Wie zijn hackers en ethische hackers? </li>
+      
+        <li>Maatregelen: Wat moeten we doen om extra veilig te zijn online? </li>
     </p2>
   </article>
   <article class="afbeeldinginleiding">
@@ -44,11 +53,25 @@
 function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
+   
+   if (!localStorage.getItem("dark-mode") == true) {
+    localStorage.setItem("dark-mode", true);
+   }
+   else {
+    localStorage.setItem("dark-mode", false)
+   }
 }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  var element = document.body;
+  if (localStorage.getItem("dark-mode") == true) {
+    element.classList.toggle("dark-mode");
+  }
+});
 </script>
 </main>
  <footer>
-  <p>Door Timo Brouns & Casper Brinkman</p>
+  <p>Door Timo Brouns & Casper Brinkman 2024 © </p>
 </footer>
 </div>
 </body>
